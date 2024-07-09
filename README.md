@@ -1,2 +1,22 @@
 # nostr-kmp-ai-generated-demo
-Project created by Claude.AI using Kotlin KMP and KTor to access a Nostr relay and display with Compose
+
+Project created from a few prompts by Claude.AI in Kotlin KMP using KTor to access a Nostr relay and display with Compose
+
+This is not a good template to build a Nostr app, but it works. 
+
+This is a Kotlin Multiplatform project targeting Android, iOS, Desktop and WASM.
+
+* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
+  It contains several subfolders:
+  - `commonMain` is for code that’s common for all targets.
+  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
+    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
+    `iosMain` would be the right folder for such calls.
+
+* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
+  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+
+Run `./gradlew run` to see the desktop version
+
+Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+
